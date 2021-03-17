@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Intro to SceneView - Create a 3D map</title>
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.16/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.16/"></script>
+    <script>
+      require(["esri/Map", "esri/views/SceneView","esri/Basemap",
+      "esri/layers/MapImageLayer","esri/layers/IntegratedMeshLayer"], function(Map, 
+      SceneView,Basemap,MapImageLayer,IntegratedMeshLayer) {
+        var basemap = new Basemap({
+              baseLayers: [
+                new MapImageLayer({
+                  url: "https://www.arcgisonline.cn/server/rest/services/YNbasemapcgcs2000/MapServer",
+                  title: "Basemap"
+                })
+              ],
+              title: "basemap",
+              id: "basemap"
+        });
+    
+        var map = new Map({
+          basemap: basemap,
+          //ground: "world-elevation"
+        });
+        var view = new SceneView({
+          container: "viewDiv", // Reference to the scene div created in step 5
+          map: map, // Reference to the map object created before the scene
+          zoom: 16, // Sets the initial scale to 1:50,000,000
+          //scale: 50000,
+          //center: [118.889198,28.915444] // Sets the center point of view with lon/lat
+          center: {
+                x: 118.889198,
+                y: 28.915444,
+                spatialReference: {
+                    wkid: 4490,
+                },
+            },
+        });
+        
+        IntegratedMeshLayer = new IntegratedMeshLayer({
+            url: "https://www.arcgis.com/server/rest/services/Hosted/̨ɽ/SceneServer"
+        });
+        view.map.add(IntegratedMeshLayer);
+        
+        console.log(view);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>

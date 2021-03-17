@@ -1,0 +1,304 @@
+
+<cameraModelDB>
+	<version>19</version>
+	<rigs/>
+	<cameras>
+		<camera name="FC6310S_8.8_5472x3648">
+			<imageWidth>5472</imageWidth>
+			<imageHeight>3648</imageHeight>
+			<pixelSize>2.345273</pixelSize>
+			<principalPointXmm>6.416667</principalPointXmm>
+			<principalPointYmm>4.277778</principalPointYmm>
+			<lensType>perspective</lensType>
+			<focalLengthmm>8.8000002</focalLengthmm>
+			<distortion>5</distortion>
+			<radialK1>0</radialK1>
+			<radialK2>0</radialK2>
+			<radialK3>0</radialK3>
+			<tangentialT1>0</tangentialT1>
+			<tangentialT2>0</tangentialT2>
+			<cameraModelSource>exif</cameraModelSource>
+			<bandConfig>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+			</bandConfig>
+		</camera>
+		<camera name="FC6520_DJIMFT15mmF1.7ASPH_15.0_5280x2970">
+			<imageWidth>5280</imageWidth>
+			<imageHeight>2970</imageHeight>
+			<pixelSize>3.314394</pixelSize>
+			<principalPointXmm>8.75</principalPointXmm>
+			<principalPointYmm>4.921875</principalPointYmm>
+			<lensType>perspective</lensType>
+			<focalLengthmm>15</focalLengthmm>
+			<distortion>5</distortion>
+			<radialK1>0</radialK1>
+			<radialK2>0</radialK2>
+			<radialK3>0</radialK3>
+			<tangentialT1>0</tangentialT1>
+			<tangentialT2>0</tangentialT2>
+			<cameraModelSource>user</cameraModelSource>
+			<bandConfig>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+			</bandConfig>
+		</camera>
+		<camera name="FC6520_DJIMFT15mmF1.7ASPH_15.0_5280x2970-1">
+			<imageWidth>5280</imageWidth>
+			<imageHeight>2970</imageHeight>
+			<pixelSize>3.31439</pixelSize>
+			<principalPointXmm>8.75</principalPointXmm>
+			<principalPointYmm>4.92188</principalPointYmm>
+			<lensType>perspective</lensType>
+			<focalLengthmm>15</focalLengthmm>
+			<distortion>5</distortion>
+			<radialK1>0</radialK1>
+			<radialK2>0</radialK2>
+			<radialK3>0</radialK3>
+			<tangentialT1>0</tangentialT1>
+			<tangentialT2>0</tangentialT2>
+			<cameraModelSource>user</cameraModelSource>
+			<bandConfig>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+			</bandConfig>
+		</camera>
+		<camera name="FC6520_DJIMFT15mmF1.7ASPH_15.0_5280x29701">
+			<imageWidth>5280</imageWidth>
+			<imageHeight>2970</imageHeight>
+			<pixelSize>3.31439</pixelSize>
+			<principalPointXmm>8.75</principalPointXmm>
+			<principalPointYmm>4.92188</principalPointYmm>
+			<lensType>perspective</lensType>
+			<focalLengthmm>15</focalLengthmm>
+			<distortion>5</distortion>
+			<radialK1>0</radialK1>
+			<radialK2>0</radialK2>
+			<radialK3>0</radialK3>
+			<tangentialT1>0</tangentialT1>
+			<tangentialT2>0</tangentialT2>
+			<cameraModelSource>user</cameraModelSource>
+			<bandConfig>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+			</bandConfig>
+		</camera>
+		<camera name="ILCE-6000_0.0_6000x4000">
+			<imageWidth>6000</imageWidth>
+			<imageHeight>4000</imageHeight>
+			<pixelSize>3.91667</pixelSize>
+			<principalPointXmm>11.75001</principalPointXmm>
+			<principalPointYmm>7.83334</principalPointYmm>
+			<lensType>perspective</lensType>
+			<focalLengthmm>20</focalLengthmm>
+			<distortion>5</distortion>
+			<radialK1>0</radialK1>
+			<radialK2>0</radialK2>
+			<radialK3>0</radialK3>
+			<tangentialT1>0</tangentialT1>
+			<tangentialT2>0</tangentialT2>
+			<cameraModelSource>exif</cameraModelSource>
+			<bandConfig>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+			</bandConfig>
+		</camera>
+		<camera name="ILCE-QX1_0.0_5456x3632">
+			<imageWidth>5456</imageWidth>
+			<imageHeight>3632</imageHeight>
+			<pixelSize>6.59824</pixelSize>
+			<principalPointXmm>18</principalPointXmm>
+			<principalPointYmm>11.982405</principalPointYmm>
+			<lensType>perspective</lensType>
+			<focalLengthmm>30</focalLengthmm>
+			<distortion>5</distortion>
+			<radialK1>0</radialK1>
+			<radialK2>0</radialK2>
+			<radialK3>0</radialK3>
+			<tangentialT1>0</tangentialT1>
+			<tangentialT2>0</tangentialT2>
+			<cameraModelSource>exif</cameraModelSource>
+			<bandConfig>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+			</bandConfig>
+		</camera>
+		<camera name="TaiYi-ILCE-QX1_0.0_5456x3632">
+			<imageWidth>5456</imageWidth>
+			<imageHeight>3632</imageHeight>
+			<pixelSize>4.25</pixelSize>
+			<principalPointXmm>11.376</principalPointXmm>
+			<principalPointYmm>7.50656</principalPointYmm>
+			<lensType>perspective</lensType>
+			<focalLengthmm>21.2173</focalLengthmm>
+			<distortion>5</distortion>
+			<radialK1>-0.000123668</radialK1>
+			<radialK2>0.000000217</radialK2>
+			<radialK3>0</radialK3>
+			<tangentialT1>-0.000018256</tangentialT1>
+			<tangentialT2>-0.000021454</tangentialT2>
+			<cameraModelSource>user</cameraModelSource>
+			<bandConfig>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+			</bandConfig>
+		</camera>
+		<camera name="ZH20T_10.1_5184x3888">
+			<imageWidth>5184</imageWidth>
+			<imageHeight>3888</imageHeight>
+			<pixelSize>1.45661</pixelSize>
+			<principalPointXmm>3.775532</principalPointXmm>
+			<principalPointYmm>2.831649</principalPointYmm>
+			<lensType>perspective</lensType>
+			<focalLengthmm>10.1400003</focalLengthmm>
+			<distortion>5</distortion>
+			<radialK1>0</radialK1>
+			<radialK2>0</radialK2>
+			<radialK3>0</radialK3>
+			<tangentialT1>0</tangentialT1>
+			<tangentialT2>0</tangentialT2>
+			<cameraModelSource>exif</cameraModelSource>
+			<bandConfig>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+			</bandConfig>
+		</camera>
+		<camera name="ZH20T_10.1_5184x3888" serialNumber="1W9DH7M00000N2">
+			<imageWidth>5184</imageWidth>
+			<imageHeight>3888</imageHeight>
+			<pixelSize>1.45661</pixelSize>
+			<principalPointXmm>3.24103</principalPointXmm>
+			<principalPointYmm>3.267074</principalPointYmm>
+			<lensType>perspective</lensType>
+			<focalLengthmm>31.4302936</focalLengthmm>
+			<distortion>5</distortion>
+			<radialK1>1.44226</radialK1>
+			<radialK2>22.2146</radialK2>
+			<radialK3>-177.952</radialK3>
+			<tangentialT1>0.0115046</tangentialT1>
+			<tangentialT2>-0.041362</tangentialT2>
+			<cameraModelSource>user</cameraModelSource>
+			<bandConfig>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+			</bandConfig>
+		</camera>
+		<camera name="ZH20T_13.5_640x512">
+			<imageWidth>640</imageWidth>
+			<imageHeight>512</imageHeight>
+			<pixelSize>12.728987</pixelSize>
+			<principalPointXmm>4.073276</principalPointXmm>
+			<principalPointYmm>3.258621</principalPointYmm>
+			<lensType>perspective</lensType>
+			<focalLengthmm>13.5</focalLengthmm>
+			<distortion>5</distortion>
+			<radialK1>0</radialK1>
+			<radialK2>0</radialK2>
+			<radialK3>0</radialK3>
+			<tangentialT1>0</tangentialT1>
+			<tangentialT2>0</tangentialT2>
+			<cameraModelSource>exif</cameraModelSource>
+			<bandConfig>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+			</bandConfig>
+		</camera>
+		<camera name="ZH20T_13.5_640x512" serialNumber="1W9DH7M00000N2">
+			<imageWidth>640</imageWidth>
+			<imageHeight>512</imageHeight>
+			<pixelSize>12.729</pixelSize>
+			<principalPointXmm>3.930053</principalPointXmm>
+			<principalPointYmm>3.027835</principalPointYmm>
+			<lensType>perspective</lensType>
+			<focalLengthmm>15.3325897</focalLengthmm>
+			<distortion>5</distortion>
+			<radialK1>-0.199179</radialK1>
+			<radialK2>0.34031</radialK2>
+			<radialK3>-1.31689</radialK3>
+			<tangentialT1>-0.000455049</tangentialT1>
+			<tangentialT2>0.000789443</tangentialT2>
+			<cameraModelSource>user</cameraModelSource>
+			<bandConfig>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+			</bandConfig>
+		</camera>
+		<camera name="ZH20T_4.5_4056x3040">
+			<imageWidth>4056</imageWidth>
+			<imageHeight>3040</imageHeight>
+			<pixelSize>1.617973</pixelSize>
+			<principalPointXmm>3.28125</principalPointXmm>
+			<principalPointYmm>2.45932</principalPointYmm>
+			<lensType>perspective</lensType>
+			<focalLengthmm>4.5</focalLengthmm>
+			<distortion>5</distortion>
+			<radialK1>0</radialK1>
+			<radialK2>0</radialK2>
+			<radialK3>0</radialK3>
+			<tangentialT1>0</tangentialT1>
+			<tangentialT2>0</tangentialT2>
+			<cameraModelSource>exif</cameraModelSource>
+			<bandConfig>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+			</bandConfig>
+		</camera>
+		<camera name="sonyQX-1">
+			<imageWidth>5280</imageWidth>
+			<imageHeight>2970</imageHeight>
+			<pixelSize>3.31439</pixelSize>
+			<principalPointXmm>8.75</principalPointXmm>
+			<principalPointYmm>4.92188</principalPointYmm>
+			<lensType>perspective</lensType>
+			<focalLengthmm>15</focalLengthmm>
+			<distortion>5</distortion>
+			<radialK1>0</radialK1>
+			<radialK2>0</radialK2>
+			<radialK3>0</radialK3>
+			<tangentialT1>0</tangentialT1>
+			<tangentialT2>0</tangentialT2>
+			<cameraModelSource>user</cameraModelSource>
+			<bandConfig>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+			</bandConfig>
+		</camera>
+		<camera name="sonyQX-111">
+			<imageWidth>5280</imageWidth>
+			<imageHeight>2970</imageHeight>
+			<pixelSize>3.31439</pixelSize>
+			<principalPointXmm>8.75</principalPointXmm>
+			<principalPointYmm>4.92188</principalPointYmm>
+			<lensType>perspective</lensType>
+			<focalLengthmm>15</focalLengthmm>
+			<distortion>5</distortion>
+			<radialK1>0</radialK1>
+			<radialK2>0</radialK2>
+			<radialK3>0</radialK3>
+			<tangentialT1>0</tangentialT1>
+			<tangentialT2>0</tangentialT2>
+			<cameraModelSource>user</cameraModelSource>
+			<bandConfig>
+				<band name="Red" centralWaveLength="660" width="0" weight="0.2126"/>
+				<band name="Green" centralWaveLength="550" width="0" weight="0.7152"/>
+				<band name="Blue" centralWaveLength="470" width="0" weight="0.0722"/>
+			</bandConfig>
+		</camera>
+	</cameras>
+	<mappings>
+		<mapping exif="ILCE-QX1_0.0_5456x3632" camera="TaiYi-ILCE-QX1_0.0_5456x3632"/>
+	</mappings>
+</cameraModelDB>
