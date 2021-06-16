@@ -32,5 +32,6 @@ mtcnn—centerloss-arcloss：https://github.com/Chase2816/MTCNN.git
 
 风格迁移：https://github.com/Chase2816/Style-migration-network.git
 
-model_deploy：https://github.com/Chase2816/tensorflow_model_deployment.git \n
+model_deploy：https://github.com/Chase2816/tensorflow_model_deployment.git 
+
 idea：java1.8
