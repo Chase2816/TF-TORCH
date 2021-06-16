@@ -26,7 +26,7 @@ centernet_TensorRT：https://github.com/CaoWGG/TensorRT-CenterNet.git
 
 基础学习：https://github.com/Chase2816/Deeplerarning.git  https://github.com/Chase2816/liev.git
 
-mtcnn—centerloss-arcloss：https://github.com/Chase2816/MTCNN.git
+mtcnn_centerloss_arcloss：https://github.com/Chase2816/MTCNN.git
 
 语音识别：https://github.com/Chase2816/Voice-wake-up.git
 
