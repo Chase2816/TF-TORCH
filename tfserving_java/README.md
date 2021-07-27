@@ -13,3 +13,5 @@ maskrcnn: https://github.com/tensorflow/models.git
 model.ckpt --> https://github.com/tensorflow/models/blob/master/research/object_detection/export_inference_graph.py --> save_model.pb
 
 javacv: https://github.com/bytedeco/javacv.git
+
+csdn:https://blog.csdn.net/qq_43100178
