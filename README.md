@@ -2,6 +2,12 @@
 
 Netron：https://github.com/lutzroeder/netron.git
 
+ncnn部署：https://github.com/EdVince
+
+车牌识别：https://github.com/zeusees/License-Plate-Detecto
+
+yolov5-opencv-dnn：https://github.com/hpc20
+
 tf1.15v3：https://github.com/mystic123/tensorflow-yolo-v3
 
 tf2.3v4：https://github.com/hunglc007/tensorflow-yolov4-tflite
