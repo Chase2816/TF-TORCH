@@ -1,4 +1,5 @@
 # TF-PYTORCH-deployment
+tfserving-yolov5s.py  pt-->saved_model  https://github.com/ultralytics/yolov5  
 
 Netron：https://github.com/lutzroeder/netron.git
 
