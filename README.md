@@ -41,4 +41,6 @@ mtcnn_centerloss_arcloss：https://github.com/Chase2816/MTCNN.git
 
 model_deploy：https://github.com/Chase2816/tensorflow_model_deployment.git 
 
+docker_boat-deploy flask打包成docker部署 http调用
+
 idea：java1.8
