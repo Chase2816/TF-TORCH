@@ -1,2 +1,8 @@
-百度网盘：
-链接: https://pan.baidu.com/s/1FdRLaMAVOZD6pyZDLXz76Q?pwd=mvsk 提取码: mvsk 复制这段内容后打开百度网盘手机App，操作更方便哦
+使用工具：
+    vs2017
+    libtorch
+    opencv==4.6
+    onnxruntime==1.10.0
+
+网盘链接: https://pan.baidu.com/s/1FdRLaMAVOZD6pyZDLXz76Q?pwd=mvsk 提取码: mvsk
+
