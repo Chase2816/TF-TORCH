@@ -1,6 +1,6 @@
 # TF-PYTORCH-deployment
 
-Yolov5_6.1：使用OpenCV/ONNXRuntime部署yolov5-v6.1目标检测，包含C++和Python两个版本的程序
+Yolov5_6.1：使用OpenCV/ONNXRuntime部署yolov5-v6.1目标检测，包含C++和Python两个版本的程序 https://github.com/hpc203/yolov5-v6.1-opencv-onnxrun
 
 tfserving-yolov5s.py  pt-->saved_model  https://github.com/ultralytics/yolov5  
 
