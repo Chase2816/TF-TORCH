@@ -8,6 +8,8 @@ import torch
 import time
 import torchvision
 import math
+import numpy
+from PIL import JpegImagePlugin
 
 class_names = ['lg']
 
@@ -158,20 +160,32 @@ def draw_comparison(img1, img2, name1, name2, fontsize=2.6, text_thickness=3):
 
     return combined_img
 
-def prepare_input(image,input_width,input_height):
-        self.img_height, self.img_width = image.shape[:2]
+def tfserving_model_pred(image,input_width,input_height):
 
-        input_img = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    img_ = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    img_ = cv2.resize(img_, (input_width, input_height))
+    img_ = img_ / 255.0
+    img_data = img_[None].tolist()
+    data = {"instances": img_data}
+    output_ = requests.post("http://172.20.112.102:9911/v1/models/yolov8:predict", json=data)
+    output = json.loads(output_.content.decode('utf8'))["predictions"][0]
+    output_det = np.array(output["output0"])
+    output_mask = np.array(output["output1"])
 
-        # Resize input image
-        input_img = cv2.resize(input_img, (input_width, input_height))
-
-        # Scale input pixel values to 0 to 1
-        input_img = input_img / 255.0
-        input_img = input_img.transpose(2, 0, 1)
-        input_tensor = input_img[np.newaxis, :, :, :].astype(np.float32)
-
-        return input_tensor
+    return output_det, output_mask
+        
+        
+def tfserving_model_PIL_pred(image, input_width, input_height):
+    img_ = image.resize((input_height, input_width))
+    img_np = np.array(img_)/255.
+    img_data = img_np[None].tolist()
+    data = {"instances":img_data}
+    output_ = requests.post("http://172.20.112.102:9911/v1/models/yolov8:predict", json=data)
+    output = json.loads(output_.content.decode('utf8'))["predictions"][0]
+    output_det = np.array(output["output0"])
+    output_mask = np.array(output["output1"])
+    
+    return output_det, output_mask
 
 def process_box_output(box_output,num_masks=32,conf_threshold=0.7,iou_threshold=0.5):
 
@@ -288,35 +302,29 @@ if os.path.exists(save_path):
     shutil.rmtree(save_path)
 os.makedirs(save_path)
 for file in files:
-    # input_img = r"E:\data\diode-opt\imgs\20200611_84.jpg"
-    # input_img = r"E:\pycharm_project\tfservingconvert\tf1.15v3\yc960xc1484.jpg"
+      # input_img = r"E:\pycharm_project\tfservingconvert\tf1.15v3\yc960xc1484.jpg"
     if file.split('.')[1] == "xml": continue
     input_img = input_imgs + file
     print(input_img)
-    # img = Image.open(r"E:\data\bzz_data\split-material-0\yc4264xc266.jpg")
-
-    img = Image.open(input_img)
-    img1 = img.resize((640, 640))
-    # img1 = img.resize((224, 224))
-    image_np = np.array(img1)
-    image_np = image_np / 255.
-    img_data = image_np[np.newaxis, :].tolist()
-    data = {"instances": img_data}
-    preds = requests.post("http://172.20.112.102:9911/v1/models/yolov8:predict", json=data)
-
-    # preds = requests.post("http://localhost:8101/v1/models/model-lg:predict", json=data)
-    # preds = requests.post("http://localhost:8201/v1/models/model-yolo_lg:predict", json=data)
-    print(preds)
-    predictions = json.loads(preds.content.decode('utf-8'))["predictions"][0]
-    pred_det = np.array(predictions['output0'])
     
-    pred_mask = np.array(predictions['output1'])    
+    input_width = 640
+    input_height = 640
     
+    image = cv2.imread(input_img)
+    pred_det, pred_mask =tfserving_model_pred(image, input_width, input_height)
+    
+    # image = Image.open(input_img)
+    # pred_det, pred_mask =tfserving_model_PIL_pred(image, input_width, input_height)
+
     boxes, scores, class_ids, mask_pred = process_box_output(pred_det)
     mask_maps = process_mask_output(mask_pred,pred_mask,boxes)
-   
     
-    frame = cv2.imread(input_img)
+    if isinstance(image,JpegImagePlugin.JpegImageFile):
+        frame = cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR) # 使用PIL image
+
+    if isinstance(image,np.ndarray):
+        frame = image.copy() # use cv2.imread()
+    
     out_img = draw_masks_out(frame,boxes, scores, class_ids,mask_maps)
     cv2.imshow("output", out_img)
     cv2.waitKey(0)
