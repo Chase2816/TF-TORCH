@@ -1,5 +1,7 @@
 # TF-PYTORCH-deployment
 
+OpenCV学堂-OpenCV课程资料：c++部署vgg、yolo等代碼 yolohttps://gitee.com/opencv_ai/opencv_tutorial_data/blob/master/source/cpp/yolov8_onnxruntime_demo.cpp
+
 Yolov8：包含obb的处理
 
 tfserving_client_java：使用javacv代替opencv，yolov3、yolov5、yolov8、maskrcnn
