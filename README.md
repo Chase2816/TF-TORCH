@@ -1,6 +1,6 @@
 # TF-PYTORCH-deployment
 
-OpenCV学堂-OpenCV课程资料：c++部署vgg、yolo等代碼 yolohttps://gitee.com/opencv_ai/opencv_tutorial_data/blob/master/source/cpp/yolov8_onnxruntime_demo.cpp
+OpenCV学堂-OpenCV课程资料：c++部署vgg、yolo等代碼 yolo https://gitee.com/opencv_ai/opencv_tutorial_data/blob/master/source/cpp/yolov8_onnxruntime_demo.cpp
 
 Yolov8：包含obb的处理
 
